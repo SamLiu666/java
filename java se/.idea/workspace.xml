@@ -16,11 +16,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1apZyoFyDbpTgGbGev2wcsn1jsw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -34,13 +39,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RandomDemo">
-    <configuration name="Arraysdemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="common_package.Arraysdemo" />
+  <component name="RunManager" selected="Application.BinarySearch">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort_algorithm.BinarySearch" />
       <module name="java se" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="common_package.*" />
+          <option name="PATTERN" value="sort_algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -48,12 +53,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="common_package.DateDemo" />
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort_algorithm.BubbleSort" />
       <module name="java se" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="common_package.*" />
+          <option name="PATTERN" value="sort_algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,12 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="common_package.RandomDemo" />
+    <configuration name="LinearSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort_algorithm.LinearSearch" />
       <module name="java se" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="common_package.*" />
+          <option name="PATTERN" value="sort_algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringBuilderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="common_package.StringBuilderTest" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort_algorithm.MergeSort" />
       <module name="java se" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="common_package.*" />
+          <option name="PATTERN" value="sort_algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SystemDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="common_package.SystemDemo" />
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort_algorithm.QuickSort" />
       <module name="java se" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="common_package.*" />
+          <option name="PATTERN" value="sort_algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RandomDemo" />
-        <item itemvalue="Application.SystemDemo" />
-        <item itemvalue="Application.DateDemo" />
-        <item itemvalue="Application.StringBuilderTest" />
-        <item itemvalue="Application.Arraysdemo" />
+        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.LinearSearch" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -122,5 +127,16 @@
       <updated>1587434752306</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
