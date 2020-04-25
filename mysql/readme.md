@@ -28,7 +28,8 @@ sudo su
 sudo service mysql start   
 
 # 进入数据库
-sudo service mysql start
+mysql -u root
+
 
 show databases;
 
@@ -105,3 +106,71 @@ mysql> SELECT * FROM employee;
 | 关键字：   | PRIMARY KEY | DEFAULT | UNIQUE | FOREIGN KEY | NOT NULL |
 
 **外键** FOREIGN KEY 既能确保数据完整性，也能表现表之间的关系
+
+## 数据库查询
+
+```mysql
+SELECT name,age FROM employee;
+
+SELECT name,age FROM employee WHERE age>25;
+
+SELECT name,age FROM employee WHERE age<25 OR age>30;
+
+SELECT name,age,phone,in_dpt FROM employee WHERE in_dpt IN ('dpt3','dpt4');
+
+SELECT name,age,phone FROM employee WHERE phone LIKE '1101__';
+
+SELECT name,age,salary,phone FROM employee ORDER BY salary DESC;
+```
+
+和 LIKE 联用的通常还有通配符，代表未知字符。SQL中的通配符是 `_` 和 `%` 。其中 `_` 代表一个未指定字符，`%` 代表**不定个**未指定字符
+
+使用关键词 **ASC** 和 **DESC** 可指定**升序**或**降序**排序
+
+| 函数名： | COUNT | SUM  | AVG      | MAX    | MIN    |
+| -------- | ----- | ---- | -------- | ------ | ------ |
+| 作用：   | 计数  | 求和 | 求平均值 | 最大值 | 最小值 |
+
+```mysql
+SELECT id,name,people_num
+FROM employee,department
+WHERE employee.in_dpt = department.dpt_name
+ORDER BY id;
+
+```
+
+```mysql
+DROP TABLE table_2;
+
+ALTER TABLE employee ADD height INT(4) DEFAULT 170;
+ALTER TABLE employee ADD weight INT(4) DEFAULT 120 AFTER age;
+ALTER TABLE employee ADD test INT(10) DEFAULT 11 FIRST;
+
+UPDATE employee SET age=21,salary=3000 WHERE name='Tom';
+```
+
+## 索引
+
+```mys
+ALTER TABLE employee ADD INDEX idx_id (id);  #在employee表的id列上建立名为idx_id的索引
+
+CREATE INDEX idx_name ON employee (name);   #在employee表的name列上建立名为idx_name的索引
+
+# 创建视图
+CREATE VIEW v_emp (v_name,v_age,v_phone) AS SELECT name,age,phone FROM employee;
+
+show variables like '%secure%';
+
+mysqldump -u root 数据库名>备份文件名;   #备份整个数据库
+
+mysqldump -u root 数据库名 表名字>备份文件名;  #备份整个表
+
+mysql -u root test < bak.sql
+```
+
+
+
+删除数据库
+
+DROP DATABASE test_01;
+
