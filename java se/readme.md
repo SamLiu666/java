@@ -226,3 +226,51 @@ List 集合中的对象按照一定的顺序排放，里面的内容可以重复
 
 ## map set hash-set
 
+# 异常
+
+异常通常有四类：
+
+- Error：系统内部错误，这类错误由系统进行处理，程序本身无需捕获处理。
+- Exception：可以处理的异常。
+- RuntimeException：可以捕获，也可以不捕获的异常。
+- 继承 Exception 的其他类：必须捕获，通常在 API 文档中会说明这些方法抛出哪些异常。
+
+throws 用于声明异常，表示该方法可能会抛出的异常。如果声明的异常中包括 checked 异常（受检异常），那么调用者必须捕获处理该异常或者使用 `throws` 继续向上抛出。`throws` 位于方法体前，多个异常之间使用 `,` 分割。
+
+## 函数式编程
+
+parameter -> expression body
+
+MathOperation subtraction = (a, b) -> a - b;
+
+## 方法引用
+
+```java
+        List<String> names = new ArrayList<>();
+
+        names.add("Peter");
+        names.add("Linda");
+        names.add("Smith");
+        names.add("Zack");
+        names.add("Bob");
+
+        //    通过System.out::println引用了输出的方法names.forEach(System.out::println);
+        names.forEach(System.out::println);
+```
+
+
+
+## Stream 流
+
+Stream 代表了来自某个源的对象的序列，这些序列支持聚集操作。下面是 Stream 的一些特性：
+
+- 元素序列：Stream 以序列的形式提供了特定类型的元素的集合。根据需求，它可以获得和计算元素，但不会储存任何元素。
+- 源：Stream 可以将集合、数组和 I/O 资源作为输入源。
+- 聚集操作：Stream 支持诸如 `filter`、`map`、`limit`、`reduce` 等的聚集操作。
+- 流水技术：许多 Stream 操作返回了流本身，故它们的返回值可以以流水的行式存在。这些操作称之为中间操作，并且它们的功能就是负责输入、处理和向目标输出。`collect()` 方法是一个终结操作，通常存在于流水线操作的末端，来标记流的结束。
+- 自动迭代：Stream 的操作可以基于已提供的源元素进行内部的迭代，而集合则需要显式的迭代。
+
+## 文件
+
+
+
