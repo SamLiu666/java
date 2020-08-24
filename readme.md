@@ -2,5 +2,6 @@
 
 # Linux
 
-# Mysql
+Ubuntu and centos7
 
+# Mysql
